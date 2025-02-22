@@ -3,7 +3,7 @@
 .logo-company {
     height: 50px;
     width: 50px;
-    background-image: url(assets/profile.png);
+    background-image: url(media/profile.png);
     background-size: cover;
     border-radius: 50%;
 }
