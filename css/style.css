@@ -22,27 +22,62 @@
 
   nav {
     display: flex;
-    background-color: #f44336; /* Warna merah */
-    justify-content: center; /* Agar item berada di tengah */
+    background-color: #add8e6; /* Warna biru muda */
+    position: relative; /* Penting untuk indicator */
 }
 
 nav a {
-    color: white; /* Warna teks putih */
+    color: white;
     text-decoration: none;
-    padding: 15px 20px; /* Padding lebih besar */
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative; /* Penting untuk indicator */
+    z-index: 1; /* Agar teks di atas indicator */
+    transition: color 0.3s ease; /* Transisi warna teks */
     border-radius: 0; /* Menghapus border radius */
-    font-weight: bold; /* Membuat teks lebih tebal */
-    font-size: 16px; /* Ukuran font (sesuaikan jika perlu) */
 }
 
+nav a:hover {
+    color: #81ecec; /* Warna teks saat hover */
+}
+
+.indicator {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 60px; /* Lebar awal indicator (sesuaikan) */
+    background-color: #1abc9c; /* Warna hijau toska */
+    border-radius: 5px;
+    transition: transform 0.3s ease, width 0.3s ease; /* Transisi gerakan dan lebar */
+    z-index: 0; /* Di bawah teks */
+}
+
+nav a.active {
+    color: #81ecec; /* Warna teks tab aktif */
+}
+
+nav a.active ~ .indicator {
+    transform: translateX(0); /* Posisi awal indicator */
+}
+
+/* Penyesuaian lebar indicator untuk setiap tab (opsional) */
+nav a:nth-child(1).active ~ .indicator { width: 60px; } /* Sesuaikan lebar untuk "Home" */
+nav a:nth-child(2).active ~ .indicator { width: 110px; } /* Sesuaikan lebar untuk "Our Packages" */
+nav a:nth-child(3).active ~ .indicator { width: 70px; } /* Sesuaikan lebar untuk "Call Us" */
+
+/* Menghilangkan border radius untuk kelas yang sesuai */
 .no-border-radius-right {
-    border-radius: 0; /* Menghapus border radius */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .no-border-radius {
-    border-radius: 0; /* Menghapus border radius */
+    border-radius: 0;
 }
 
 .no-border-radius-left {
-    border-radius: 0; /* Menghapus border radius */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
