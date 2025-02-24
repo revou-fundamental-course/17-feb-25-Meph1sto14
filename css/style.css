@@ -18,9 +18,9 @@
     width: 50px;
     background-size: cover;
     border-radius: 50%;
-  }
+}
 
-  nav {
+nav {
     display: flex;
 }
 
