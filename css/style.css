@@ -1,12 +1,13 @@
 /* Ini CSS Exsternal */
 
-.logo-company img{
+/* .logo-company {
     height: 50px;
     width: 50px;
+    background-image: url(media/profile.png);
     background-size: cover;
     border-radius: 50%;
 }
-
+ */
 
  .container-wrapper {
     display: flex;
