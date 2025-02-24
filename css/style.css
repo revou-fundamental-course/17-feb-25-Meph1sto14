@@ -23,7 +23,6 @@
   nav {
     display: flex;
     background-color: #add8e6; /* Warna biru muda */
-    position: relative; /* Penting untuk indicator */
 }
 
 nav a {
@@ -32,8 +31,7 @@ nav a {
     padding: 15px 20px;
     font-weight: bold;
     font-size: 16px;
-    position: relative; /* Penting untuk indicator */
-    z-index: 1; /* Agar teks di atas indicator */
+    position: relative; /* Penting untuk efek garis bawah */
     transition: color 0.3s ease; /* Transisi warna teks */
     border-radius: 0; /* Menghapus border radius */
 }
@@ -42,30 +40,21 @@ nav a:hover {
     color: #81ecec; /* Warna teks saat hover */
 }
 
-.indicator {
+nav a::after {
+    content: '';
     position: absolute;
-    height: 100%;
-    top: 0;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
     left: 0;
-    width: 60px; /* Lebar awal indicator (sesuaikan) */
-    background-color: #1abc9c; /* Warna hijau toska */
-    border-radius: 5px;
-    transition: transform 0.3s ease, width 0.3s ease; /* Transisi gerakan dan lebar */
-    z-index: 0; /* Di bawah teks */
+    background-color: #81ecec; /* Warna garis bawah */
+    transform: scaleX(0); /* Garis bawah awalnya tidak terlihat */
+    transition: transform 0.3s ease; /* Animasi transisi garis bawah */
 }
 
-nav a.active {
-    color: #81ecec; /* Warna teks tab aktif */
+nav a:hover::after {
+    transform: scaleX(1); /* Garis bawah muncul saat hover */
 }
-
-nav a.active ~ .indicator {
-    transform: translateX(0); /* Posisi awal indicator */
-}
-
-/* Penyesuaian lebar indicator untuk setiap tab (opsional) */
-nav a:nth-child(1).active ~ .indicator { width: 60px; } /* Sesuaikan lebar untuk "Home" */
-nav a:nth-child(2).active ~ .indicator { width: 110px; } /* Sesuaikan lebar untuk "Our Packages" */
-nav a:nth-child(3).active ~ .indicator { width: 70px; } /* Sesuaikan lebar untuk "Call Us" */
 
 /* Menghilangkan border radius untuk kelas yang sesuai */
 .no-border-radius-right {
