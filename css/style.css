@@ -22,22 +22,21 @@
 
   nav {
     display: flex;
-    background-color: #add8e6; /* Warna biru muda */
 }
 
 nav a {
-    color: white;
+    color: black; /* Warna teks hitam */
     text-decoration: none;
     padding: 15px 20px;
     font-weight: bold;
     font-size: 16px;
-    position: relative; /* Penting untuk efek garis bawah */
-    transition: color 0.3s ease; /* Transisi warna teks */
-    border-radius: 0; /* Menghapus border radius */
+    position: relative;
+    transition: color 0.3s ease;
+    border-radius: 0;
 }
 
 nav a:hover {
-    color: #81ecec; /* Warna teks saat hover */
+    color: #333; /* Warna teks saat hover (sedikit lebih gelap) */
 }
 
 nav a::after {
@@ -47,13 +46,13 @@ nav a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #81ecec; /* Warna garis bawah */
-    transform: scaleX(0); /* Garis bawah awalnya tidak terlihat */
-    transition: transform 0.3s ease; /* Animasi transisi garis bawah */
+    background-color: black; /* Warna garis bawah hitam */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
 nav a:hover::after {
-    transform: scaleX(1); /* Garis bawah muncul saat hover */
+    transform: scaleX(1);
 }
 
 /* Menghilangkan border radius untuk kelas yang sesuai */
