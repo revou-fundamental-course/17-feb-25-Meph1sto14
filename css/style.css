@@ -69,3 +69,14 @@ nav a:hover::after {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+.main-content {
+    display: flex;
+    gap: 24px;
+}
+
+.main-container {
+    border: 1px solid;
+    height: 400px;
+    flex: 1;
+}
