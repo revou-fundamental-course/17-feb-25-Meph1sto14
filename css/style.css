@@ -1,10 +1,6 @@
 /* Ini CSS Exsternal */
 
-.logo-company {
-    position: relative;
-  }
-  
-  .logo-company img {
+.logo-company img {
     height: 50px;
     width: 50px;
     background-size: cover;
