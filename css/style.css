@@ -79,4 +79,5 @@ nav a:hover::after {
     border: 1px solid;
     height: 400px;
     flex: 1;
+    padding: 20px; /* Tambahkan padding */
 }
