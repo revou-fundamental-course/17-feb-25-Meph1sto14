@@ -5,9 +5,7 @@
     width: 50px;
     background-size: cover;
     border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    float: left;
   }
 
  /* .container-wrapper {
