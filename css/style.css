@@ -219,6 +219,7 @@ h4 {
     height: 300px;
     align-content: center;
     text-align: center;
+    border: none;
 }
 
 footer {
@@ -232,8 +233,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0; /* Menghapus margin */
-    border: none; /* Menghapus border */
+    margin: 0;
 }
 
 footer .social_icon, 
