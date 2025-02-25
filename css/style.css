@@ -247,6 +247,7 @@ footer .menu{
 footer .social_icon li
 footer .menu li{
     list-style: none;
+    list-style: hidden;
 }
 
 footer .social_icon li a
