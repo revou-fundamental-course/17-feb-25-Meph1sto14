@@ -226,23 +226,24 @@ footer {
     width: 100%;
     background: #8aeaff;
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 20px 0; /* Mengurangi padding horizontal untuk memusatkan */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: none; /* Menghapus garis */
+    margin: 0; /* Menghapus margin */
+    border: none; /* Menghapus border */
 }
 
 footer .social_icon, 
 footer .menu {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+    padding: 0; /* Menghapus padding */
 }
 
 footer .social_icon li,
