@@ -206,6 +206,7 @@ h4 {
     height: 300px;
     align-content: center;
     text-align: center;
+    border: none;
 }
 
 #call-us-section>header {
