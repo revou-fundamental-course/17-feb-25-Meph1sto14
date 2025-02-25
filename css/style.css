@@ -1,6 +1,7 @@
 /* Ini CSS Exsternal */
 
 body {
+    margin: 0;
     font-family: Papyrus, fantasy;
 }
 
@@ -80,6 +81,7 @@ main>header{
 .main-content {
     display: flex;
     gap: 20px;
+    padding: 20px;
 }
 
 h4 {
@@ -90,35 +92,77 @@ h4 {
     height: 400px;
     flex: 1;
     margin: 20px;
-    align-content: center;
-    text-align: center;
-    background-color: #dcdcdc;
-    padding: 20px;
+    background-color: #dcdcdc; /* Latar belakang tetap #dcdcdc */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    font-family: sans-serif;
+    padding: 20px;
+    text-align: left;
 }
 
-.main-container h2 {
-    text-align: left; /* Mengubah teks "Contact Us" menjadi rata kiri */
-    margin-bottom: 5px; /* Mengurangi margin bawah untuk memperkecil jeda */
-    font-size: 1.5em; /* Menyesuaikan ukuran font */
-    font-weight: bold; /* Menebalkan font */
+/* Gaya Banner Autoslide */
+.banner-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.main-container p {
-    text-align: left; /* Teks deskripsi juga rata kiri */
-    margin-bottom: 15px; /* Menyesuaikan jeda antar paragraf */
-    font-size: 0.9em; /* Menyesuaikan ukuran font */
-    line-height: 1.4; /* Menyesuaikan line-height untuk jeda antar baris */
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.banner-image {
+    background-color: #e0e0e0; /* Placeholder untuk gambar */
+    height: 60%; /* Sesuaikan tinggi gambar */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.banner-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    background-color: #ccc; /* Placeholder untuk ikon */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Gaya Form Contact Us */
+.main-container:last-child h2 {
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main-container:last-child p {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    line-height: 1.4;
 }
 
 .main-container label {
     display: block;
     margin-bottom: 5px;
-    text-align: left; /* Label juga rata kiri */
-    font-size: 0.9em; /* Menyesuaikan ukuran font */
+    font-size: 0.9em;
 }
 
 .main-container input[type="text"],
@@ -129,7 +173,7 @@ h4 {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 0.9em; /* Menyesuaikan ukuran font input */
+    font-size: 0.9em;
 }
 
 .main-container button {
@@ -140,7 +184,7 @@ h4 {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    font-size: 1em; /* Menyesuaikan ukuran font tombol */
+    font-size: 1em;
 }
 
 .main-container button:hover {
