@@ -200,27 +200,55 @@ h4 {
     background-color: aliceblue;
 }
 
+#our-package-section {
+    text-align: center;
+}
+  
+#our-package-section > header {
+    margin-bottom: 20px;
+}
+  
 .our-package-content {
-    border: 1px solid;
-    height: 300px;
-    align-content: center;
-    text-align: center;
-    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-#call-us-section>header {
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    background-color: antiquewhite;
+  
+.package-item {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
-
+  
+.package-item ion-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #888; /* Warna ikon abu-abu */
+}
+  
+.package-item h3 {
+    margin-bottom: 10px;
+    color: #333; /* Warna judul */
+}
+  
+package-item p {
+    color: #666; /* Warna teks deskripsi */
+}
+  
+#call-us-section {
+    text-align: center;
+    margin-top: 40px;
+}
+  
+#call-us-section > header {
+    margin-bottom: 20px;
+}
+  
 .call-us-content {
-    border: 1px solid;
-    height: 300px;
-    align-content: center;
-    text-align: center;
-    border: none;
+    padding: 20px;
+    color: #666; /* Warna teks deskripsi */
 }
 
 footer {
