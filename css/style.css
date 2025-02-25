@@ -294,44 +294,53 @@ footer .waves {
     height: 100px;
     background: url(../images/waves.png);
     background-size: 1000px 100px;
-    /* overflow: hidden;
-    line-height: 0; */
+    overflow: hidden;
+    line-height: 0;
 }
 
-footer .wave#wave1 {
+footer .wave {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 200%;
+    height: 100px;
+    background-repeat: repeat no-repeat;
+    background-size: 50% 100px;
+}
+
+#wave1 {
     z-index: 1000;
     opacity: 1;
-    bottom: 0;
     animation: animateWave 4s linear infinite;
 }
 
-footer .wave#wave2 {
+#wave2 {
     z-index: 999;
     opacity: 0.5;
     bottom: 10px;
-    animation: animateWave_02 4s linear infinite;
+    animation: animateWave 4s linear infinite reverse;
 }
 
-footer .wave#wave3 {
+#wave3 {
     z-index: 1000;
     opacity: 0.2;
-    bottom: 15px;
+    bottom: 20px;
     animation: animateWave 3s linear infinite;
 }
 
-footer .wave#wave4 {
+#wave4 {
     z-index: 999;
     opacity: 0.7;
-    bottom: 20px;
-    animation: animateWave_02 3s linear infinite;
+    bottom: 30px;
+    animation: animateWave 3s linear infinite reverse;
 }
 
 @keyframes animateWave {
-    0% { background-position-x: 1000px; }
-    100% { background-position-x: 0px; }
-}
-
-@keyframes animateWave_02 {
-    0% { background-position-x: 1000px; }
-    100% { background-position-x: 0px; }
+    0% {
+        background-position-x: 200%;
+    }
+    100% {
+        background-position-x: 0;
+    }
 }
