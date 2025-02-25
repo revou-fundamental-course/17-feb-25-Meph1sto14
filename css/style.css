@@ -82,6 +82,7 @@ main>header{
     display: flex;
     gap: 20px;
     padding: 20px;
+    font-family: sans-serif;
 }
 
 h4 {
@@ -97,6 +98,7 @@ h4 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
+    font-family: sans-serif;
 }
 
 /* Gaya Banner Autoslide */
