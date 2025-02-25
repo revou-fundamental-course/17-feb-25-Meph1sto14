@@ -199,7 +199,6 @@ h4 {
   
   #our-package-section > header {
     margin-bottom: 20px;
-    background-color: #666;
   }
   
   .our-package-content {
@@ -232,38 +231,38 @@ h4 {
     color: #666;
   }
   
-  #call-us-section {
-    text-align: center;
-    margin-top: 40px;
-    background-color: #f8f9fa; /* Latar belakang abu-abu muda */
-    padding: 40px 20px;
-  }
-  
-  #call-us-section > header {
-    margin-bottom: 20px;
-  }
-  
-  .call-us-content {
-    color: #666;
-    max-width: 600px; /* Lebar maksimum untuk teks */
-    margin: 0 auto;
-  }
-  
-  .call-to-action {
-    background-color: #343a40; /* Warna latar belakang tombol */
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition: background-color 0.3s ease; /* Transisi untuk efek hover */
-  }
-  
-  .call-to-action:hover {
-    background-color: #495057; /* Warna latar belakang tombol saat hover */
-  }
+#call-us-section {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #f8f9fa; /* Latar belakang abu-abu muda */
+  padding: 40px 20px;
+}
+
+#call-us-section > header {
+  margin-bottom: 20px;
+}
+
+.call-us-content {
+  color: #666;
+  max-width: 600px; /* Lebar maksimum untuk teks */
+  margin: 0 auto;
+}
+
+.call-to-action {
+  background-color: #343a40; /* Warna latar belakang tombol */
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.call-to-action:hover {
+  background-color: #495057; /* Warna latar belakang tombol saat hover */
+}
 
 footer {
     position: relative;
