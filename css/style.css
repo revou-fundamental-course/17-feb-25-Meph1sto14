@@ -82,6 +82,10 @@ main>header{
     gap: 20px;
 }
 
+h4 {
+    color: gray; /* Mengubah warna teks menjadi abu-abu */
+}
+
 .main-container {
     /* border: 1px solid; */ /* Menghapus border */
     height: 400px;
