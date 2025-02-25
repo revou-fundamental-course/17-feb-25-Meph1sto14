@@ -83,12 +83,51 @@ main>header{
 }
 
 .main-container {
-    border: 1px solid;
+    /* border: 1px solid; */ /* Menghapus border */
     height: 400px;
     flex: 1;
     margin: 20px;
     align-content: center;
     text-align: center;
+    background-color: #fff; /* Menambahkan latar belakang putih agar sesuai dengan gambar */
+    padding: 20px; /* Menambahkan padding agar konten tidak terlalu rapat dengan tepi */
+    border-radius: 8px; /* Menambahkan border radius agar sudutnya membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kedalaman */
+    width: 300px; /* Menentukan lebar container */
+}
+
+.main-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-container input[type="text"],
+.main-container input[type="email"],
+.main-container select {
+    width: calc(100% - 12px);
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.main-container button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.main-container button:hover {
+    background-color: #555;
 }
 
 #our-package-section>header {
