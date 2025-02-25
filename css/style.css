@@ -94,7 +94,7 @@ h4 {
     height: 400px;
     flex: 1;
     margin: 20px;
-    background-color: #dcdcdc; /* Latar belakang tetap #dcdcdc */
+    background-color: gray; /* Latar belakang tetap #dcdcdc */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
