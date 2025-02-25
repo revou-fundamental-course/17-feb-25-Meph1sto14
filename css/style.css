@@ -70,7 +70,7 @@ nav a:hover::after {
 hr.transparent-line {
     border: none;
     height: 1px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Membuat gradien transparan */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.5), rgba(0, 0, 0, 0)); /* Gradien abu-abu mendekati hitam */
 }
 
 main>header{
