@@ -1,5 +1,8 @@
 /* Ini CSS Exsternal */
 
+body {
+    font-family: fantasy;;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -83,7 +86,9 @@ main>header{
     border: 1px solid;
     height: 400px;
     flex: 1;
-    margin: 20px; /* Tambahkan padding */
+    margin: 20px;
+    align-content: center;
+    text-align: center;
 }
 
 #our-package-section>header {
@@ -96,6 +101,8 @@ main>header{
 .our-package-content {
     border: 1px solid;
     height: 300px;
+    align-content: center;
+    text-align: center;
 }
 
 #call-us-section>header {
@@ -108,6 +115,8 @@ main>header{
 .call-us-content {
     border: 1px solid;
     height: 300px;
+    align-content: center;
+    text-align: center;
 }
 
 footer{
