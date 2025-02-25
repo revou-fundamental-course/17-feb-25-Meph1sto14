@@ -71,7 +71,7 @@ nav a:hover::after {
 
 hr.transparent-line {
     border: none;
-    height: 1px;
+    height: 0px;
     background: #80808080;
 }
 
