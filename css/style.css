@@ -220,6 +220,7 @@ h4 {
     align-content: center;
     text-align: center;
 }
+
 footer {
     position: relative;
     width: 100%;
@@ -231,6 +232,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: none; /* Menghapus garis */
 }
 
 footer .social_icon, 
