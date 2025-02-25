@@ -193,63 +193,57 @@ h4 {
     background-color: #555;
 }
 
-#our-package-section>header {
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    background-color: aliceblue;
-}
-
 #our-package-section {
     text-align: center;
-}
+  }
   
-#our-package-section > header {
+  #our-package-section > header {
     margin-bottom: 20px;
-}
+  }
   
-.our-package-content {
+  .our-package-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
   
-.package-item {
-    width: 200px;
-    margin: 20px;
+  .package-item {
+    width: 30%; /* Mengubah lebar menjadi 30% untuk 3 kolom */
+    margin: 10px; /* Mengurangi margin agar pas dalam 3 kolom */
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
+    box-sizing: border-box; /* Menambahkan box-sizing agar padding tidak menambah lebar */
+  }
   
-.package-item ion-icon {
+  .package-item ion-icon {
     font-size: 30px;
     margin-bottom: 10px;
-    color: #888; /* Warna ikon abu-abu */
-}
+    color: #888;
+  }
   
-.package-item h3 {
+  .package-item h3 {
     margin-bottom: 10px;
-    color: #333; /* Warna judul */
-}
+    color: #333;
+  }
   
-package-item p {
-    color: #666; /* Warna teks deskripsi */
-}
+  package-item p {
+    color: #666;
+  }
   
-#call-us-section {
+  #call-us-section {
     text-align: center;
     margin-top: 40px;
-}
+  }
   
-#call-us-section > header {
+  #call-us-section > header {
     margin-bottom: 20px;
-}
+  }
   
-.call-us-content {
+  .call-us-content {
     padding: 20px;
-    color: #666; /* Warna teks deskripsi */
-}
+    color: #666;
+  }
 
 footer {
     position: relative;
