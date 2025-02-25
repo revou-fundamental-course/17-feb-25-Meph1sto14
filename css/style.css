@@ -286,6 +286,12 @@ footer p {
     font-family: sans-serif;
 }
 
-/* footer wave{
-
-} */
+footer wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #f00 url(media/wave.png);
+    background-size: 1000px 100px;
+}
