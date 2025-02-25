@@ -1,7 +1,13 @@
 /* Ini CSS Exsternal */
 
 body {
-    font-family: Papyrus, fantasy;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .main-header{
@@ -87,27 +93,37 @@ h4 {
 }
 
 .main-container {
-    /* border: 1px solid; */ /* Menghapus border */
     height: 400px;
     flex: 1;
     margin: 20px;
     align-content: center;
     text-align: center;
-    background-color: #fff; /* Menambahkan latar belakang putih agar sesuai dengan gambar */
-    padding: 20px; /* Menambahkan padding agar konten tidak terlalu rapat dengan tepi */
-    border-radius: 8px; /* Menambahkan border radius agar sudutnya membulat */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kedalaman */
-    width: 300px; /* Menentukan lebar container */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 .main-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left; /* Mengubah teks "Contact Us" menjadi rata kiri */
+    margin-bottom: 5px; /* Mengurangi margin bawah untuk memperkecil jeda */
+    font-size: 1.5em; /* Menyesuaikan ukuran font */
+    font-weight: bold; /* Menebalkan font */
+}
+
+.main-container p {
+    text-align: left; /* Teks deskripsi juga rata kiri */
+    margin-bottom: 15px; /* Menyesuaikan jeda antar paragraf */
+    font-size: 0.9em; /* Menyesuaikan ukuran font */
+    line-height: 1.4; /* Menyesuaikan line-height untuk jeda antar baris */
 }
 
 .main-container label {
     display: block;
     margin-bottom: 5px;
+    text-align: left; /* Label juga rata kiri */
+    font-size: 0.9em; /* Menyesuaikan ukuran font */
 }
 
 .main-container input[type="text"],
@@ -118,6 +134,7 @@ h4 {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 0.9em; /* Menyesuaikan ukuran font input */
 }
 
 .main-container button {
@@ -128,6 +145,7 @@ h4 {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    font-size: 1em; /* Menyesuaikan ukuran font tombol */
 }
 
 .main-container button:hover {
