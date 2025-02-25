@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: Papyrus, fantasy;
+    font-family: sans-serif;;
 }
 
 .main-header{
@@ -99,7 +99,6 @@ h4 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
-    font-family: sans-serif;
 }
 
 /* Gaya Banner Autoslide */
@@ -272,7 +271,6 @@ footer .menu li a {
     display: inline-block;
     text-decoration: none;
     opacity: 0.75;
-    font-family: sans-serif;
 }
 
 footer .menu li a:hover {
@@ -285,5 +283,4 @@ footer p {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.1em;
-    font-family: sans-serif;
 }
