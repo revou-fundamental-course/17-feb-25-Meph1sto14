@@ -232,6 +232,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    list-style: none;
 }
 
 footer .social_icon, 
@@ -247,7 +248,6 @@ footer .menu{
 footer .social_icon li
 footer .menu li{
     list-style: none;
-    list-style: hidden;
 }
 
 footer .social_icon li a
