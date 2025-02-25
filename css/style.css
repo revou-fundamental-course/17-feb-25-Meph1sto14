@@ -70,6 +70,10 @@ nav a:hover::after {
     border-bottom-left-radius: 0;
 }
 
+main>header{
+    text-align: center;
+}
+
 .main-content {
     display: flex;
     gap: 20px;
@@ -98,10 +102,14 @@ nav a:hover::after {
     height: 100px;
     align-content: center;
     text-align: center;
-    background-color: aqua;
+    background-color: antiquewhite;
 }
 
 .call-us-content {
     border: 1px solid;
     height: 300px;
+}
+
+footer{
+    text-align: center;
 }
