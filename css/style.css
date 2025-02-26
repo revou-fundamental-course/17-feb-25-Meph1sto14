@@ -285,11 +285,12 @@ h4 {
     background-color: #555;
   }
   .interest select{
-    width: 14rem;
+    width: calc(100% - 12px);
     height: 3rem;
     padding-left: 15px;
-    font-size: 16px;
-    border: 1.9px solid lightgray; border-radius: 4px;
+    font-size: 1em;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
     color: #39325A; outline: none;
     -webkit-appearance: none;
     cursor: pointer;
