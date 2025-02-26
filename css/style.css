@@ -90,8 +90,13 @@ h4 {
     color: #c0c0c0 ; /* Mengubah warna teks menjadi abu-abu */
 }
 
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Mengatur ruang antara tabel kanan dan kiri */
+    align-items: stretch; /* Membuat tabel meregang secara vertikal */
+}
+
 .main-container {
-    height: 600px;
     flex: 1;
     margin: 20px;
     background-color: #dcdcdc;
@@ -99,9 +104,9 @@ h4 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
-    display: flex; /* Tambahkan flex untuk penataan */
-    flex-direction: column; /* Atur item secara vertikal */
-    justify-content: space-between; /* Atur ruang antar item */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Gaya Banner Autoslide */
@@ -149,10 +154,14 @@ h4 {
 
 .user-details {
     display: flex;
-    flex-direction: column; /* Mengatur item secara vertikal */
-    align-items: flex-start; /* Mengatur item ke bagian kiri */
+    align-items: flex-start;
     margin-left: 15px;
     font-family: sans-serif;
+}
+
+.user-info ion-icon {
+    font-size: 3em;
+    color: #007bff;
 }
 
 .user-details .user-name {
@@ -167,11 +176,6 @@ h4 {
     margin: 0;
 }
 
-.user-info ion-icon {
-    font-size: 3em;
-    color: #007bff;
-}
-
 /* Gaya Form Contact Us */
 .contact-us-container {
     padding: 2rem;
@@ -180,13 +184,14 @@ h4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     margin: 20px auto;
+    text-align: left; /* Mengatur teks rata kiri */
 }
 
 .contact-us-container h2 {
     margin-bottom: 10px;
     font-size: 2em;
     color: #333;
-    text-align: center;
+    text-align: left; /* Mengatur judul rata kiri */
 }
 
 .contact-us-container p {
@@ -194,7 +199,7 @@ h4 {
     font-size: 1em;
     color: #666;
     line-height: 1.6;
-    text-align: center;
+    text-align: left; /* Mengatur paragraf rata kiri */
 }
 
 .contact-us-container label {
@@ -203,6 +208,7 @@ h4 {
     font-size: 1em;
     color: #333;
     font-weight: 600;
+    text-align: left; /* Mengatur label rata kiri */
 }
 
 .contact-us-container input[type="text"],
@@ -246,7 +252,6 @@ h4 {
     appearance: none;
     background-color: #fff;
     padding-right: 30px;
-    /* Tambahkan border yang sama dengan input */
     border: 1px solid #ddd;
     border-radius: 6px;
 }
@@ -266,6 +271,55 @@ h4 {
 
 .contact-us-container button:hover {
     background-color: #0056b3;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .contact-us-container {
+        padding: 1.5rem;
+    }
+
+    .contact-us-container h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-us-container p {
+        font-size: 0.9em;
+    }
+}
+
+/* Fitur yang jarang digunakan: Smooth Scroll pada focus input */
+.contact-us-container input:focus,
+.contact-us-container select:focus {
+    scroll-behavior: smooth;
+}
+
+/* Fitur yang jarang digunakan: Placeholder transition */
+.contact-us-container input::placeholder,
+.contact-us-container select::placeholder {
+    transition: opacity 0.3s ease;
+}
+
+.contact-us-container input:focus::placeholder,
+.contact-us-container select:focus::placeholder{
+    opacity: 0;
+}
+
+/* Select Box Panah ke Kiri (Saat Tidak Aktif) */
+.contact-us-container .select-wrapper::after {
+    border-top: none;
+    border-left: 5px solid #777;
+    border-right: none;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+/* Select Box Panah ke Bawah (Saat Aktif) */
+.contact-us-container select:focus + .select-wrapper::after,
+.contact-us-container select:active + .select-wrapper::after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #777;
+    transform: translateY(-50%) rotate(0deg);
 }
 
 /* Responsif */
