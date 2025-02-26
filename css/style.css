@@ -149,14 +149,10 @@ h4 {
 
 .user-details {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column; /* Mengatur item secara vertikal */
+    align-items: flex-start; /* Mengatur item ke bagian kiri */
     margin-left: 15px;
     font-family: sans-serif;
-}
-
-.user-info ion-icon {
-    font-size: 3em;
-    color: #007bff;
 }
 
 .user-details .user-name {
@@ -169,6 +165,11 @@ h4 {
     font-style: italic;
     color: #c0c0c0;
     margin: 0;
+}
+
+.user-info ion-icon {
+    font-size: 3em;
+    color: #007bff;
 }
 
 /* Gaya Form Contact Us */
