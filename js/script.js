@@ -1,7 +1,5 @@
 // Ini JavaScript Exsternal
 
-import Swal from 'sweetalert2/dist/sweetalert2.js';
-
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Mencegah form dari pengiriman default
 
