@@ -233,52 +233,13 @@ h4 {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.contact-us-container .select-wrapper {
-    position: relative;
-}
-
-.contact-us-container .select-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    border-left: none;
-    border-right: none;
-    border-top: 5px solid #777; /* Panah tetap mengarah ke bawah */
-}
-
-.contact-us-container select {
-    appearance: none;
-    background-color: #fff;
-    padding: 10px;
-    padding-right: 30px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    width: calc(100% - 22px);
-    font-size: 1em;
-    color: #333;
-}
-
-.contact-us-container select:focus {
+.select-box .select{
+    height: 100%;
+    width: 100%;
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.contact-us-container select option {
-    background-color: #fff;
-    color: #333;
-    padding: 8px;
-}
-
-.contact-us-container select option:hover {
-    background-color: #e0e0e0;
-}
-
-.contact-us-container select:focus option {
-    background-color: #e0f7fa;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
 }
 
 .contact-us-container button {
