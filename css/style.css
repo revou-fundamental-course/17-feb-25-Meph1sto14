@@ -244,9 +244,9 @@ h4 {
     right: 15px;
     transform: translateY(-50%);
     pointer-events: none;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #777;
+    border-left: none;
+    border-right: none;
+    border-top: 5px solid #777; /* Panah tetap mengarah ke bawah */
 }
 
 .contact-us-container select {
@@ -326,16 +326,8 @@ h4 {
 }
 
 .contact-us-container input:focus::placeholder,
-.contact-us-container select:focus::placeholder{
+.contact-us-container select:focus::placeholder {
     opacity: 0;
-}
-
-/* Menghapus Animasi Panah */
-.contact-us-container .select-wrapper::after {
-    border-top: 5px solid #777; /* Panah tetap mengarah ke bawah */
-    border-left: none;
-    border-right: none;
-    transform: translateY(-50%); /* Posisi panah */
 }
 
 /* our-package-content */
