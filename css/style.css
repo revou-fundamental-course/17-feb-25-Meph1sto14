@@ -106,68 +106,63 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.banner-content {
+  }
+  
+  .banner-content {
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.banner-image {
+  }
+  
+  .banner-image {
     background-color: #e0e0e0; /* Placeholder untuk gambar */
     height: 60%; /* Sesuaikan tinggi gambar */
     border-radius: 8px;
     margin-bottom: 20px;
-}
-
-.banner-text {
+  }
+  
+  .banner-text {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.banner-text p {
+  }
+  
+  .banner-text p {
     font-size: 1.2em;
     font-style: italic;
     color: #333;
     margin: 0;
-}
-
-.user-info {
+  }
+  
+  .user-info {
     display: flex;
     align-items: flex-start; /* Mengatur item ke bagian atas */
-}
-
-.user-details {
+  }
+  
+  .user-details {
     display: flex;
-    align-items: flex-start; /* Mengatur item ke bagian kiri */
+    flex-direction: column;
     margin-left: 20px; /* Memberikan jarak dari garis batas */
-}
-
-.user-details ion-icon {
+  }
+  
+  .user-details ion-icon {
     font-size: 2em; /* Sesuaikan ukuran ikon */
     margin-right: 10px; /* Memberikan jarak antara ikon dan teks */
     background-color: white; /* Warna latar belakang lingkaran putih */
     border-radius: 50%; /* Membuat latar belakang menjadi lingkaran */
     padding: 10px; /* Memberikan ruang di sekitar ikon */
-}
-
-.user-details div {
-    display: flex;
-    flex-direction: column;
-}
-
-.user-details div p:first-child {
+  }
+  
+  .user-name {
     font-weight: bold; /* Membuat nama profil menjadi tebal */
     font-style: normal; /* Menghilangkan gaya italic */
     margin: 0;
-}
-
-.user-details div p:last-child {
+  }
+  
+  .user-occupation {
     margin: 0;
-}
+  }  
 
 /* Gaya Form Contact Us */
 .main-container:last-child h2 {
