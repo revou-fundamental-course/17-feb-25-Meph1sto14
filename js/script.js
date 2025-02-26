@@ -1,19 +1,28 @@
 // Ini JavaScript Exsternal
 
-import alert from 'sweetalert2/dist/sweetalert2.js';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    // Prevent the form from submitting normally
-    event.preventDefault();
-    
-    // Get values from input fields
+    event.preventDefault(); // Mencegah form dari pengiriman default
+
+    // Ambil nilai dari input fields
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const interest = document.getElementById('interest').value;
-    
-    // Display an alert with the submitted information
-    alert(`Form Submitted Successfully!\n\nName: ${name}\nEmail: ${email}\nDestination: ${interest}`);
-    
-    // Optional: Reset the form after submission
-    this.reset();
+
+    // Buat pesan alert dengan data input
+    alert(`Name: ${name}\nEmail: ${email}\nInterest: ${interest}`);
+
+    // Lakukan sesuatu dengan data (misalnya, kirim ke server atau tampilkan pesan)
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Interest:', interest);
+
+    // Tampilkan pesan SweetAlert2 untuk semua pilihan (opsional)
+    Swal.fire({
+        icon: 'success',
+        title: 'Form Submitted!',
+        text: 'Your information has been successfully submitted.',
+        confirmButtonText: 'OK'
+    });
 });
