@@ -377,6 +377,11 @@ h4 {
   margin: 0 auto;
 }
 
+.call-us-p{
+        color: #c0c0c0;
+};
+
+
 .call-to-action {
   background-color: #343a40; /* Warna latar belakang tombol */
   color: white;
