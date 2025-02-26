@@ -87,7 +87,7 @@ main>header{
 }
 
 h4 {
-    color: gray; /* Mengubah warna teks menjadi abu-abu */
+    color: #d3d3d3 ; /* Mengubah warna teks menjadi abu-abu */
 }
 
 .main-container {
@@ -166,6 +166,7 @@ h4 {
   
   .user-occupation {
     margin: 0;
+    color: gre;
   }  
 
 /* Gaya Banner Autoslide */
