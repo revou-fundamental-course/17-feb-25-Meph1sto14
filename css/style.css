@@ -245,6 +245,14 @@ h4 {
 }
 
 .select-box .select{
+    width: calc(100% - 22px); /* Sesuaikan dengan input lainnya */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
     height: 100%;
     width: calc(100% - 22px);
     padding: 10px;
@@ -252,6 +260,7 @@ h4 {
     border: none;
     color: #007bff;
     font-size: 1rem;
+    background-color: #007bff;
 }
 
 .contact-us-container button {
