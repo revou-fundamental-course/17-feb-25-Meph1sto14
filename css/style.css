@@ -154,6 +154,7 @@ h4 {
 
 .user-details {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     margin-left: 15px;
     font-family: sans-serif;
