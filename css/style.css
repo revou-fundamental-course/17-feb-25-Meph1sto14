@@ -213,9 +213,20 @@ h4 {
 }
 
 .contact-us-container input[type="text"],
-.contact-us-container input[type="email"],
-.contact-us-container select {
+.contact-us-container input[type="email"]
+{
     width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.contact-us-container select {
+    width: calc(100% - 22px); /* Sesuaikan dengan input lainnya */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -244,7 +255,7 @@ h4 {
 }
 
 .contact-us-container button {
-    background-color: #333; /* Warna tombol hitam */
+    background-color: #007bff; /* Warna tombol hitam */
     color: white;
     padding: 12px 20px;
     border: none;
