@@ -1,5 +1,7 @@
 // Ini JavaScript Exsternal
 
+import alert from 'sweetalert2/dist/sweetalert2.js';
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     // Prevent the form from submitting normally
     event.preventDefault();
