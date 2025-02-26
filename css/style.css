@@ -163,10 +163,14 @@ h4 {
     margin: 0;
     font-family: sans-serif;
   }
-  
+
+.user-review{
+    color: #c0c0c0;
+}
+
   .user-occupation {
     margin: 0;
-    color: gre;
+    color: #c0c0c0;
   }  
 
 /* Gaya Banner Autoslide */
@@ -198,6 +202,7 @@ h4 {
 
 .user-review {
     font-style: italic;
+    color: #c0c0c0;
 }
   
   .banner-text p {
@@ -240,6 +245,7 @@ h4 {
 
 .user-occupation{
     font-style: italic;
+    color: #c0c0c0;
 }
   
   .user-details div p:last-child {
@@ -328,6 +334,30 @@ h4 {
   
   package-item p {
     color: #666;
+  }
+
+  .detail1{
+    color: #c0c0c0;
+  }
+
+  .detail2{
+    color: #c0c0c0;
+  }
+
+  .detail3{
+    color: #c0c0c0;
+  }
+
+  .detail4{
+    color: #c0c0c0;
+  }
+
+  .detail5{
+    color: #c0c0c0;
+  }
+
+  .detail6{
+    color: #c0c0c0;
   }
   
 #call-us-section {
