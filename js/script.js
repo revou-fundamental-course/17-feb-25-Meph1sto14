@@ -13,13 +13,11 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     console.log('Email:', email);
     console.log('Interest:', interest);
 
-    // Tampilkan pesan SweetAlert2 hanya jika opsi "Bali" dipilih
-    if (interest === 'product1') {
-        Swal.fire({
-            icon: 'success',
-            title: 'Form Submitted!',
-            text: 'Your information has been successfully submitted.',
-            confirmButtonText: 'OK'
-        });
-    }
+    // Tampilkan pesan SweetAlert2 untuk semua pilihan
+    Swal.fire({
+        icon: 'success',
+        title: 'Form Submitted!',
+        text: 'Your information has been successfully submitted.',
+        confirmButtonText: 'OK'
+    });
 });
