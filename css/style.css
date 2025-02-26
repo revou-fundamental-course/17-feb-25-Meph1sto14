@@ -106,13 +106,13 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
   }
   
   .banner-content {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: white;
   }
   
   .banner-image {
