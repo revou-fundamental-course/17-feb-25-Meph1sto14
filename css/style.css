@@ -164,37 +164,105 @@ h4 {
     margin: 0;
   }  
 
-/* Gaya Form Contact Us */
-.main-container:last-child h2 {
+/* Gaya Banner Autoslide */
+.banner-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .banner-image {
+    background-color: #e0e0e0; /* Placeholder untuk gambar */
+    height: 60%; /* Sesuaikan tinggi gambar */
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .banner-text p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+    margin: 0;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: flex-start; /* Mengatur item ke bagian atas */
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: flex-start; /* Mengatur item ke bagian kiri */
+    margin-left: 20px; /* Memberikan jarak dari garis batas */
+  }
+  
+  .user-details ion-icon {
+    font-size: 2em; /* Sesuaikan ukuran ikon */
+    margin-right: 10px; /* Memberikan jarak antara ikon dan teks */
+    background-color: white; /* Warna latar belakang lingkaran putih */
+    border-radius: 50%; /* Membuat latar belakang menjadi lingkaran */
+    padding: 10px; /* Memberikan ruang di sekitar ikon */
+  }
+  
+  .user-details div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-details div p:first-child {
+    font-weight: bold; /* Membuat nama profil menjadi tebal */
+    font-style: normal; /* Menghilangkan gaya italic */
+    margin: 0;
+  }
+  
+  .user-details div p:last-child {
+    margin: 0;
+  }
+  
+  /* Gaya Form Contact Us */
+  .main-container:last-child h2 {
     margin-bottom: 5px;
     font-size: 1.5em;
     font-weight: bold;
-}
-
-.main-container:last-child p {
+  }
+  
+  .main-container:last-child p {
     margin-bottom: 15px;
     font-size: 0.9em;
     line-height: 1.4;
-}
-
-.main-container label {
+  }
+  
+  .main-container label {
     display: block;
     margin-bottom: 5px;
     font-size: 0.9em;
-}
-
-.main-container input[type="text"],
-.main-container input[type="email"],
-.main-container select {
+  }
+  
+  .main-container input[type="text"],
+  .main-container input[type="email"],
+  .main-container select {
     width: calc(100% - 12px);
     padding: 6px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 0.9em;
-}
-
-.main-container button {
+  }
+  
+  .main-container button {
     background-color: #333;
     color: white;
     padding: 10px;
@@ -203,11 +271,12 @@ h4 {
     cursor: pointer;
     width: 100%;
     font-size: 1em;
-}
-
-.main-container button:hover {
+  }
+  
+  .main-container button:hover {
     background-color: #555;
-}
+  }
+  
 
 #our-package-section {
     text-align: center;
