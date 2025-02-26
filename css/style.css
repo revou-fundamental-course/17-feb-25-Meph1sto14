@@ -178,7 +178,6 @@ h4 {
 }
 
 /* Gaya Form Contact Us */
-/* Gaya Form Contact Us */
 .contact-us-container {
     padding: 1.5rem;
     background-color: #f0f0f0; /* Latar belakang abu-abu muda */
@@ -236,6 +235,7 @@ h4 {
 
 .contact-us-container .select-wrapper {
     position: relative;
+    width: calc(100% - 22px); /* Ukuran select box sama dengan yang lainnya */
 }
 
 .contact-us-container .select-wrapper::after {
@@ -245,8 +245,8 @@ h4 {
     right: 15px;
     transform: translateY(-50%);
     pointer-events: none;
-    border-left: none;
-    border-right: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
     border-top: 5px solid #777; /* Panah tetap mengarah ke bawah */
 }
 
@@ -257,9 +257,9 @@ h4 {
     padding-right: 30px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    width: calc(100% - 22px); /* Sejajar dengan input lainnya */
     font-size: 0.9em; /* Ukuran font lebih kecil */
     color: #333;
+    width: 100%; /* Lebar penuh dari wrapper */
 }
 
 .contact-us-container button {
@@ -311,37 +311,6 @@ h4 {
     opacity: 0;
 }
 
-/* Responsif */
-@media (max-width: 600px) {
-    .contact-us-container {
-        padding: 1.5rem;
-    }
-
-    .contact-us-container h2 {
-        font-size: 1.8em;
-    }
-
-    .contact-us-container p {
-        font-size: 0.9em;
-    }
-}
-
-/* Fitur yang jarang digunakan: Smooth Scroll pada focus input */
-.contact-us-container input:focus,
-.contact-us-container select:focus {
-    scroll-behavior: smooth;
-}
-
-/* Fitur yang jarang digunakan: Placeholder transition */
-.contact-us-container input::placeholder,
-.contact-us-container select::placeholder {
-    transition: opacity 0.3s ease;
-}
-
-.contact-us-container input:focus::placeholder,
-.contact-us-container select:focus::placeholder {
-    opacity: 0;
-}
 
 /* our-package-content */
 #our-package-section {
