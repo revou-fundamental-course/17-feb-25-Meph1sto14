@@ -299,19 +299,21 @@ h4 {
 }
 
 .contact-us-container .select-wrapper::after {
-    content: '▼';
+    content: '';
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 15px;
     transform: translateY(-50%);
     pointer-events: none;
-    color: #777;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #777;
 }
 
 .contact-us-container select {
-    appearance: none; /* Menghapus tampilan default select */
+    appearance: none;
     background-color: #fff;
-    padding-right: 30px; /* Ruang untuk ikon dropdown */
+    padding-right: 30px;
 }
 
 .contact-us-container button {
