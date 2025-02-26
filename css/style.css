@@ -201,21 +201,23 @@ h4 {
   .user-info {
     display: flex;
     align-items: flex-start; /* Mengatur item ke bagian atas */
-  }
-  
-  .user-details {
+}
+
+.user-details {
     display: flex;
+    flex-direction: column;
     align-items: flex-start; /* Mengatur item ke bagian kiri */
     margin-left: 20px; /* Memberikan jarak dari garis batas */
-  }
-  
-  .user-details ion-icon {
+}
+
+.user-details ion-icon {
     font-size: 2em; /* Sesuaikan ukuran ikon */
-    margin-right: 10px; /* Memberikan jarak antara ikon dan teks */
-    background-color: white; /* Warna latar belakang lingkaran putih */
+    margin-bottom: 5px;
+    background-color: #ccc; /* Warna latar belakang lingkaran */
     border-radius: 50%; /* Membuat latar belakang menjadi lingkaran */
     padding: 10px; /* Memberikan ruang di sekitar ikon */
-  }
+}
+
   
   .user-details div {
     display: flex;
