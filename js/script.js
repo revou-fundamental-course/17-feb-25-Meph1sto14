@@ -8,9 +8,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const email = document.getElementById('email').value;
     const interest = document.getElementById('interest').value;
 
-    // // Buat pesan alert dengan data input
-    // alert(`Name: ${name}\nEmail: ${email}\nInterest: ${interest}`);
-
     // Lakukan sesuatu dengan data (misalnya, kirim ke server atau tampilkan pesan)
     console.log('Name:', name);
     console.log('Email:', email);
