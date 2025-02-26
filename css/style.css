@@ -179,46 +179,59 @@ h4 {
 
 /* Gaya Form Contact Us */
 .contact-us-container {
-    padding: 1.5rem;
+    padding: 2rem;
     background-color: #f0f0f0; /* Latar belakang abu-abu muda */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Form lebih kecil */
+    max-width: 500px;
     margin: 20px auto;
-    text-align: left; /* Kembali ke kiri */
+    text-align: left;
 }
 
 .contact-us-container h2 {
     margin-bottom: 10px;
-    font-size: 1.8em; /* Ukuran font lebih kecil */
+    font-size: 2em;
     color: #333;
+    text-align: left;
 }
 
 .contact-us-container p {
     margin-bottom: 20px;
-    font-size: 0.9em; /* Ukuran font lebih kecil */
+    font-size: 1em;
     color: #666;
     line-height: 1.6;
+    text-align: left;
 }
 
 .contact-us-container label {
     display: block;
     margin-bottom: 8px;
-    font-size: 0.9em; /* Ukuran font lebih kecil */
+    font-size: 1em;
     color: #333;
     font-weight: 600;
     text-align: left;
 }
 
 .contact-us-container input[type="text"],
-.contact-us-container input[type="email"],
-.contact-us-container select {
-    width: calc(100% - 22px); /* Sejajar dengan input lainnya */
-    padding: 8px; /* Padding lebih kecil */
+.contact-us-container input[type="email"]
+{
+    width: calc(100% - 22px);
+    padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    font-size: 0.9em; /* Ukuran font lebih kecil */
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.contact-us-container select {
+    width: calc(100% - 22px); /* Sesuaikan dengan input lainnya */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
     color: #333;
     transition: border-color 0.3s ease;
 }
@@ -231,44 +244,34 @@ h4 {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.contact-us-container .select-wrapper {
-    position: relative;
-    width: calc(100% - 22px); /* Ukuran select box sama dengan yang lainnya */
-}
-
-.contact-us-container .select-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #777; /* Panah tetap mengarah ke bawah */
-}
-
-.contact-us-container select {
-    appearance: none;
-    background-color: #fff;
-    padding: 8px; /* Padding lebih kecil */
-    padding-right: 30px;
+.select-box .select{
+    width: calc(100% - 22px); /* Sesuaikan dengan input lainnya */
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    font-size: 0.9em; /* Ukuran font lebih kecil */
+    font-size: 1em;
     color: #333;
-    width: 100%; /* Lebar penuh dari wrapper */
+    transition: border-color 0.3s ease;
+    height: 100%;
+    width: calc(100% - 22px);
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #007bff;
+    font-size: 1rem;
+    background-color: #007bff;
 }
 
 .contact-us-container button {
-    background-color: #007bff; /* Warna tombol biru */
+    background-color: #007bff; /* Warna tombol hitam */
     color: white;
-    padding: 10px; /* Padding lebih kecil */
+    padding: 12px 20px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     width: 100%;
-    font-size: 1em; /* Ukuran font medium */
+    font-size: 1.1em;
     font-weight: 600;
     transition: background-color 0.3s ease;
 }
@@ -280,15 +283,15 @@ h4 {
 /* Responsif */
 @media (max-width: 600px) {
     .contact-us-container {
-        padding: 1.2rem;
+        padding: 1.5rem;
     }
 
     .contact-us-container h2 {
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
 
     .contact-us-container p {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 }
 
