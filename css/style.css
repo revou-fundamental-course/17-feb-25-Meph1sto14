@@ -142,7 +142,7 @@ h4 {
 
 .user-details {
     display: flex;
-    align-items: center; /* Mengatur item ke tengah vertikal */
+    align-items: flex-start; /* Mengatur item ke bagian kiri */
     margin-left: 20px; /* Memberikan jarak dari garis batas */
 }
 
