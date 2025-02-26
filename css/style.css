@@ -185,14 +185,13 @@ h4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px; /* Form lebih kecil */
     margin: 20px auto;
-    text-align: left;
+    text-align: center; /* Agar semua elemen berada di tengah */
 }
 
 .contact-us-container h2 {
     margin-bottom: 10px;
     font-size: 1.8em; /* Ukuran font lebih kecil */
     color: #333;
-    text-align: left;
 }
 
 .contact-us-container p {
@@ -200,7 +199,6 @@ h4 {
     font-size: 0.9em; /* Ukuran font lebih kecil */
     color: #666;
     line-height: 1.6;
-    text-align: left;
 }
 
 .contact-us-container label {
@@ -223,6 +221,9 @@ h4 {
     font-size: 0.9em; /* Ukuran font lebih kecil */
     color: #333;
     transition: border-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-us-container input[type="text"]:focus,
@@ -236,6 +237,8 @@ h4 {
 .contact-us-container .select-wrapper {
     position: relative;
     width: calc(100% - 22px); /* Ukuran select box sama dengan yang lainnya */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-us-container .select-wrapper::after {
@@ -273,6 +276,8 @@ h4 {
     font-size: 1em; /* Ukuran font medium */
     font-weight: 600;
     transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-us-container button:hover {
@@ -310,7 +315,6 @@ h4 {
 .contact-us-container select:focus::placeholder {
     opacity: 0;
 }
-
 
 /* our-package-content */
 #our-package-section {
