@@ -315,65 +315,54 @@ h4 {
 /* our-package-content */
 #our-package-section {
     text-align: center;
-  }
-  
-  #our-package-section > header {
+}
+
+#our-package-section > header {
     margin-bottom: 20px;
-  }
-  
-  .our-package-content {
+}
+
+.our-package-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .package-item {
-    width: 30%; /* Mengubah lebar menjadi 30% untuk 3 kolom */
-    margin: 10px; /* Mengurangi margin agar pas dalam 3 kolom */
+}
+
+.package-item {
+    width: 30%;
+    margin: 10px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; /* Menambahkan box-sizing agar padding tidak menambah lebar */
-  }
-  
-  .package-item ion-icon {
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.package-item ion-icon {
     font-size: 30px;
     margin-bottom: 10px;
-    color: #888;
-  }
-  
-  .package-item h3 {
+    color: white;
+}
+
+.package-item h3 {
     margin-bottom: 10px;
-    color: #333;
-  }
-  
-  package-item p {
-    color: #666;
-  }
+    color: white;
+}
 
-  .detail1{
-    color: #c0c0c0;
-  }
+.package-item p {
+    color: lightgray;
+}
 
-  .detail2{
-    color: #c0c0c0;
-  }
+.detail1, .detail2, .detail3, .detail4, .detail5, .detail6 {
+    color: lightgray;
+}
 
-  .detail3{
-    color: #c0c0c0;
-  }
-
-  .detail4{
-    color: #c0c0c0;
-  }
-
-  .detail5{
-    color: #c0c0c0;
-  }
-
-  .detail6{
-    color: #c0c0c0;
-  }
+/* Latar belakang gambar */
+.bali {
+    background-image: url('media/bali.jpg'); /* Perubahan path */
+}
   
 #call-us-section {
   text-align: center;
