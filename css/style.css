@@ -355,36 +355,6 @@ h4 {
     color: #c0c0c0;
   }
 
-  .package-item.bali {
-    background-image: url('media/bali.png');
-    background-size: cover; /* Mengatur gambar agar menutupi seluruh div */
-}
-
-.package-item.japan {
-    background-image: url('media/japan.png'); /* Ganti dengan gambar yang sesuai */
-    background-size: cover;
-}
-
-.package-item.singapore {
-    background-image: url('media/singapore.png'); /* Ganti dengan gambar yang sesuai */
-    background-size: cover;
-}
-
-.package-item.bandung {
-    background-image: url('media/bandung.png'); /* Ganti dengan gambar yang sesuai */
-    background-size: cover;
-}
-
-.package-item.surabaya {
-    background-image: url('media/surabaya.png'); /* Ganti dengan gambar yang sesuai */
-    background-size: cover;
-}
-
-.package-item.maintenance {
-    background-image: url('media/maintenance.png'); /* Ganti dengan gambar yang sesuai */
-    background-size: cover;
-}
-  
 #call-us-section {
   text-align: center;
   margin-top: 40px;
