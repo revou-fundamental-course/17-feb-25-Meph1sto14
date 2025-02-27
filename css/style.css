@@ -137,7 +137,7 @@ h4 {
     display: flex;
     width: 300%;
     white-space: nowrap;
-    transition: transform 0.8s ease-in-out; /* Animasi transisi */
+    transition: transform 0.6s ease-in-out; /* Transisi lebih cepat */
     transform: translateX(0); /* Posisi awal */
 }
 
@@ -147,16 +147,7 @@ h4 {
     object-fit: cover;
 }
 
-/* Animasi slide menggunakan JavaScript */
-.slide-animation {
-    transform: translateX(-100%);
-}
-
-.slide-animation-2 {
-    transform: translateX(-200%);
-}
-
-.banner-text {
+banner-text {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -201,6 +192,7 @@ h4 {
     margin: 0;
 }
 
+/* contact-us-container */
 .contact-us-container input[type="text"],
 .contact-us-container input[type="email"]
 {
