@@ -130,41 +130,30 @@ h4 {
     overflow: hidden;
     border: 5px solid #fff;
     border-radius: 2px;
-    height : 40vmin;
+    height: 40vmin;
 }
 
 .wrapper {
     display: flex;
-    animation: slide 12s infinite linear;
     width: 300%;
     white-space: nowrap;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    33.33% {
-        transform: translateX(0);
-    }
-    33.34% {
-        transform: translateX(-100%);
-    }
-    66.66% {
-        transform: translateX(-100%);
-    }
-    66.67% {
-        transform: translateX(-200%);
-    }
-    100% {
-        transform: translateX(-200%);
-    }
+    transition: transform 0.8s ease-in-out; /* Animasi transisi */
+    transform: translateX(0); /* Posisi awal */
 }
 
 .slide-image {
     width: 33.33%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Animasi slide menggunakan JavaScript */
+.slide-animation {
+    transform: translateX(-100%);
+}
+
+.slide-animation-2 {
+    transform: translateX(-200%);
 }
 
 .banner-text {
@@ -210,41 +199,6 @@ h4 {
     font-style: italic;
     color: #c0c0c0;
     margin: 0;
-}
-
-/* Gaya Form Contact Us */
-.contact-us-container {
-    padding: 2rem;
-    background-color: #f0f0f0; /* Latar belakang abu-abu muda */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 20px auto;
-    text-align: left;
-}
-
-.contact-us-container h2 {
-    margin-bottom: 10px;
-    font-size: 2em;
-    color: #333;
-    text-align: left;
-}
-
-.contact-us-container p {
-    margin-bottom: 20px;
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
-    text-align: left;
-}
-
-.contact-us-container label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 1em;
-    color: #333;
-    font-weight: 600;
-    text-align: left;
 }
 
 .contact-us-container input[type="text"],

@@ -21,3 +21,22 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         confirmButtonText: 'OK'
     });
 });
+
+const wrapper = document.querySelector('.wrapper');
+let counter = 0;
+
+function slide() {
+    if (counter === 0) {
+        wrapper.classList.add('slide-animation');
+    } else if (counter === 1) {
+        wrapper.classList.remove('slide-animation');
+        wrapper.classList.add('slide-animation-2');
+    } else {
+        wrapper.classList.remove('slide-animation-2');
+        wrapper.style.transform = 'translateX(0)';
+        counter = -1;
+    }
+    counter++;
+}
+
+setInterval(slide, 4000); // Ganti gambar setiap 4 detik
