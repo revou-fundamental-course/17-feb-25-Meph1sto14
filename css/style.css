@@ -358,43 +358,31 @@ h4 {
   .package-item.bali {
     background-image: url('media/bali.png');
     background-size: cover; /* Mengatur gambar agar menutupi seluruh div */
-    background-position: center; /* Memusatkan gambar */
-    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
 }
 
 .package-item.japan {
     background-image: url('media/japan.png'); /* Ganti dengan gambar yang sesuai */
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .package-item.singapore {
     background-image: url('media/singapore.png'); /* Ganti dengan gambar yang sesuai */
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .package-item.bandung {
     background-image: url('media/bandung.png'); /* Ganti dengan gambar yang sesuai */
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .package-item.surabaya {
     background-image: url('media/surabaya.png'); /* Ganti dengan gambar yang sesuai */
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .package-item.maintenance {
     background-image: url('media/maintenance.png'); /* Ganti dengan gambar yang sesuai */
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
   
 #call-us-section {
