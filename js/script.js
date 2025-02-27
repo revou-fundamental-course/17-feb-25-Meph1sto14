@@ -26,19 +26,20 @@ const wrapper = document.querySelector('.wrapper');
 const images = document.querySelectorAll('.slide-image');
 let counter = 0;
 let imageWidth = images[0].clientWidth;
+let direction = 1; // 1 untuk maju, -1 untuk mundur
 
 function slide() {
-    counter++;
-    if (counter >= images.length) {
-        counter = 0;
-        wrapper.style.transition = 'none'; // Hilangkan transisi saat kembali ke awal
-        wrapper.style.transform = `translateX(0px)`;
-        setTimeout(() => {
-            wrapper.style.transition = 'transform 0.6s ease-in-out'; // Kembalikan transisi
-        }, 10);
-    } else {
-        wrapper.style.transform = `translateX(-${imageWidth * counter}px)`;
+    counter += direction;
+
+    if (counter >= images.length - 1) {
+        direction = -1; // Ubah arah ke mundur
+        counter = images.length - 2; // Mulai dari gambar kedua terakhir
+    } else if (counter < 0) {
+        direction = 1; // Ubah arah ke maju
+        counter = 1; // Mulai dari gambar kedua
     }
+
+    wrapper.style.transform = `translateX(-${imageWidth * counter}px)`;
 }
 
-setInterval(slide, 3000); // Ganti gambar setiap 3 detik
+setInterval(slide, 3000);

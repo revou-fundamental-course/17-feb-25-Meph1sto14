@@ -135,19 +135,19 @@ h4 {
 
 .wrapper {
     display: flex;
-    width: 300%;
+    width: 400%;
     white-space: nowrap;
-    transition: transform 0.6s ease-in-out; /* Transisi lebih cepat */
-    transform: translateX(0); /* Posisi awal */
+    transition: transform 1s ease-in-out; /* Transisi lebih lambat */
+    transform: translateX(0);
 }
 
 .slide-image {
-    width: 33.33%;
+    width: 25%;
     height: 100%;
     object-fit: cover;
 }
 
-banner-text {
+.banner-text {
     flex: 1;
     display: flex;
     flex-direction: column;
