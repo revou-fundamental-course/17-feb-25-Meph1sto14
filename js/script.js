@@ -31,12 +31,10 @@ let direction = 1; // 1 untuk maju, -1 untuk mundur
 function slide() {
     counter += direction;
 
-    if (counter === images.length - 1 && direction === 1) {
+    if (counter === images.length - 1) {
         direction = -1; // Ubah arah ke mundur
-        counter = images.length - 2; // Mundur ke gambar kedua terakhir
-    } else if (counter === 0 && direction === -1) {
+    } else if (counter === 0) {
         direction = 1; // Ubah arah ke maju
-        counter = 1; // Mulai maju dari gambar kedua
     }
 
     wrapper.style.transform = `translateX(-${imageWidth * counter}px)`;
