@@ -181,15 +181,6 @@ h4 {
     width: 100%;
 }
 
-
-
-.banner-image {
-    background-color: #e0e0e0;
-    height: 60%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
 .banner-text {
     flex: 1;
     display: flex;
