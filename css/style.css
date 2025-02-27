@@ -355,9 +355,9 @@ h4 {
     color: #c0c0c0;
   }
 
-  .detail1{
-    background-image: url('media/bali.jpg');
-  }
+.package-item bali{
+    background-image: url(media/bali.jpg);
+}
   
 #call-us-section {
   text-align: center;
