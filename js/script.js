@@ -26,17 +26,17 @@ const wrapper = document.querySelector('.wrapper');
 const images = document.querySelectorAll('.slide-image');
 let counter = 0;
 let imageWidth = images[0].clientWidth;
-let direction = 1; // 1 untuk maju, -1 untuk mundur
+let direction = 1;
 
 function slide() {
     counter += direction;
 
     if (counter >= images.length - 1) {
-        direction = -1; // Ubah arah ke mundur
-        counter = images.length - 2; // Mulai dari gambar kedua terakhir
-    } else if (counter < 0) {
-        direction = 1; // Ubah arah ke maju
-        counter = 1; // Mulai dari gambar kedua
+        direction = -1;
+        counter = images.length - 2; // Mundur ke gambar kedua terakhir
+    } else if (counter < 1) { // Mulai maju dari gambar kedua
+        direction = 1;
+        counter = 1;
     }
 
     wrapper.style.transform = `translateX(-${imageWidth * counter}px)`;
